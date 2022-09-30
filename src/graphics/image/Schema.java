@@ -2,7 +2,7 @@ package graphics.image;
 
 public class Schema implements TextColorSchema{
 
-    char[] symbols = {'#', '$', '@', '%', '*', '+', '-', '\''};
+    char[] symbols = {'\'', '-', '+', '*', '%', '@', '$', '#'};
 
     @Override
     public char convert(int color) {

@@ -6,13 +6,13 @@ import graphics.server.GServer;
 
 public class Main {
     public static void main(String[] args) throws Exception {
-        TextGraphicsConverter converter = new Converter(); // Создайте объект вашего класса конвертера
+        TextGraphicsConverter converter = new Converter();
 
-        GServer server = new GServer(converter); // Создаём объект сервера
-        server.start(); // Запускаем
+        GServer server = new GServer(converter);
+        server.start();
 
-        // Или то же, но с выводом на экран:
-        String url = "https://raw.githubusercontent.com/netology-code/java-diplom/main/pics/simple-test.png";
+        // Вывод в консоль:
+        String url = "https://a.deviantart.net/avatars/p/a/pandeadpool.jpg?4";
         String imgTxt = converter.convert(url);
         System.out.println(imgTxt);
     }
